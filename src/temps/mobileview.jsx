@@ -175,7 +175,7 @@ const styles = stylex.create({
 
   cont1: {
     backgroundColor: '#151212',
-    minHeight: '100vh',
+    minHeight: '50vh',
     padding:'20px',
      display: 'flex',
     flexDirection: 'column',
@@ -183,7 +183,7 @@ const styles = stylex.create({
 
   cont2: {
     backgroundColor: '#ad9d9d',
-    minHeight: '100vh',
+    minHeight: '50vh',
   },
   image: {
     width: "140px",
