@@ -273,7 +273,7 @@ const styles = stylex.create({
     margin:'20px',
     padding:'5px',
     transition: "all 0.4s ease", 
-    minHeight:'20vh',
+    minHeight:'10vh',
 
     ':hover': {
       boxShadow: "0 0 20px #00f2ff", 
