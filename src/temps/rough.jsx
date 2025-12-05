@@ -37,10 +37,10 @@ export default function Card() {
             </a>
           </div>
 
-          <div {...stylex.props(styles.links)} >
+          <div {...stylex.props(styles.social)} >
             <a {...stylex.props(styles.link)}href="https://www.linkedin.com/public-profile/settings" target="_blank" >
               <LinkedinIcon size={19} />  LinkedIn
-            </a>/
+            </a>
 
             <a {...stylex.props(styles.link)}href="https://github.com/battudinesh?tab=repositories" target="_blank" >
               <Github size={18} /> GitHub
@@ -152,42 +152,53 @@ const styles = stylex.create({
     flexDirection: "column",
   },
 
-     header: {
+  header: {
     display: 'grid',
     alignItems: 'center',
     justifyItems: 'center',
     gap: '12px',
-    padding: '12px 16px',
+    padding: '12px 0px',
     backgroundColor: "#111827",
     width: "100%",
 
-        gridTemplateColumns: {
-            default: '1fr',
-            '@media (min-width: 768px)': 'auto 1fr',
-        },
+       
     },
+
 
   image: {
     width: "140px",
     height: "140px",
     borderRadius: "50%",
     borderStyle: "3px solid white",
-    '@media(max-width:450px)':{
-      width: "100px",
-      height: "100px",
-      marginRight:'20px',
 
-    }
+    '@media (max-width: 660px)': {
+      width: "120px",
+      height: "120px",
+    },
+
+    '@media (max-width: 450px)': {
+      width: "90px",
+      height: "90px",
+    },
+
+    '@media (max-width: 300px)': {
+      width: "60px",
+      height: "60px",
+    },
+
+      '@media (max-width: 200px)': {
+        width: "50px",
+        height: "50px",
+      }
   },
+
 
   links: {
     display: "flex",
     flexWrap: "wrap",
     gap: "16px",
-    justifyContent:'space-around',
+    justifyContent:'center',
     alignItems:'center',
-
-    
   },link: {
   color: "#ebedf4ff",
   textDecoration: "none",
@@ -199,7 +210,7 @@ const styles = stylex.create({
 
 
   container: {
-    padding: "40px 20px",
+    padding: "20px 5px",
     display: "grid",
     gap: "24px",
     justifyItems: "center",
@@ -213,7 +224,7 @@ const styles = stylex.create({
     borderRadius: "15px",
     maxWidth: "73vw",
     width: "100%",
-    // boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.08)",
     transition: "all 0.4s ease", 
 
     textAlign: "left",
@@ -251,26 +262,46 @@ const styles = stylex.create({
     alignSelf:"center"
   },
   headertext: {
-    gap: '2px',
-    display: 'flex',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    flexDirection: 'column',
-    color: 'white',
-    marginRight:'50px'
+  gap: '6px',
+  display: 'flex',
+  fontWeight: 'bold',
+  textAlign: 'center',
+  flexDirection: 'column',
+  color: 'white',
+  margin: "0",
 
-  },
-  text:{
-    '@media(max-width:450px)':{
-      fontSize:'12px',
-    },
-    '@media(max-width:360px)':{
-      fontSize:'10px',
-    },
-    '@media(max-width:315px)':{
-      fontSize:'8px',
-    }
+  '@media (min-width: 660px)': {
+    textAlign: "left",
+  }
+},
 
+  text: {
+  fontSize: "14px",
+
+  '@media (max-width: 450px)': {
+    fontSize: '12px',
   },
+
+  '@media (max-width: 317px)': {
+    fontSize: '10px',
+  },
+
+  '@media (max-width: 200px)': {
+    fontSize: '8px',
+  }
+},
+social: {
+  display: "flex",
+  gap: "12px",
+  justifyContent: "center",
+  flexWrap: "wrap",
+
+  // '@media (max-width: 320px)': {
+  //   flexDirection: "column",
+  //   alignItems: "center",
+  //   gap: "6px",
+  // }
+},
+
 
 });
