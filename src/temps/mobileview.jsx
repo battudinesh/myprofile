@@ -161,7 +161,7 @@ export default Mobile;
 const styles = stylex.create({
   page: {
     margin: 0,
-    minHeight: '100vh',
+    minHeight: '90vh',
     width: '100%',
   },
 
