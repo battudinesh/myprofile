@@ -161,13 +161,16 @@ export default Mobile;
 const styles = stylex.create({
   page: {
     margin: 0,
-    minHeight: '90vh',
+    minHeight: '100vh',
     width: '100%',
+    display:'flex',
+    justifyContent:'center'
   },
 
   container: {
     display: 'grid',
     gridTemplateColumns: '35% 65%', 
+    width:'100%'
   },
 
   cont1: {
@@ -175,7 +178,7 @@ const styles = stylex.create({
     minHeight: '100vh',
     padding:'20px',
      display: 'flex',
-  flexDirection: 'column',
+    flexDirection: 'column',
   },
 
   cont2: {
