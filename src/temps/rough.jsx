@@ -266,6 +266,9 @@ const styles = stylex.create({
     },
     '@media(max-width:360px)':{
       fontSize:'10px',
+    },
+    '@media(max-width:315px)':{
+      fontSize:'8px',
     }
 
   },
